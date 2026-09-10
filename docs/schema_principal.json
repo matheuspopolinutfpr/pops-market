@@ -1,0 +1,42 @@
+{
+  "_id": "64f1a2b3c4d5e6f7a8b9c0d1",
+  "nome": "Notebook Lenovo IdeaPad 3",
+  "descricao": "Notebook para estudos, trabalho e uso cotidiano.",
+  "preco": 3499.90,
+  "estoque": 25,
+  "disponivel": true,
+  "data_criacao": "2026-09-01T14:30:00Z",
+
+  "vendedor_id": "64009f1a2b3c4d5e6f7a8b99",
+
+  "dimensoes": {
+    "altura_cm": 1.99,
+    "largura_cm": 35.9,
+    "profundidade_cm": 23.6,
+    "peso_kg": 1.65
+  },
+
+  "especificacoes": {
+    "processador": "Intel Core i5",
+    "memoria_ram_gb": 16,
+    "armazenamento_gb": 512,
+    "tipo_armazenamento": "SSD"
+  },
+
+  "categorias": [
+    "Informática",
+    "Notebooks",
+    "Eletrônicos"
+  ],
+
+  "imagens": [
+    "notebook-frente.jpg",
+    "notebook-lateral.jpg",
+    "notebook-teclado.jpg"
+  ],
+
+  "avaliacao": {
+    "media": 4.7,
+    "total": 128
+  }
+}
