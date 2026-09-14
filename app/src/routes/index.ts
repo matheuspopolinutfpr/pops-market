@@ -1,5 +1,6 @@
 import { Router, Request, Response } from "express";
-import itensRoutes from "./itens.routes.js";
+import produtosRoutes from "./produtos.routes.js";
+import clientesRoutes from "./clientes.routes.js";
 import { getDb } from "../database/mongo.js";
 import { getRedisClient } from "../database/redis.js";
 import { getElasticClient } from "../database/elastic.js";
@@ -48,7 +49,8 @@ routes.get("/health", async (req: Request, res: Response) => {
   res.status(httpStatus).json(status);
 });
 
-// Rota da coleção simples (GET /api/itens)
-routes.use("/itens", itensRoutes);
+// Rotas de negócio do PopsMarket (5 consultas conectadas ao MongoDB)
+routes.use("/produtos", produtosRoutes);
+routes.use("/clientes", clientesRoutes);
 
 export default routes;
